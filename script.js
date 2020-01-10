@@ -58,3 +58,11 @@ else if (wantSpecial === false && wantNumber === false && wantLower === false &&
         blankInput.value = password;
     }
     generate ()
+
+// Copy new password to clipboard- NOT WORKING
+function addToClipboard() {
+        let textarea = document.getElementById("#displayPass");
+        textarea.select();
+        document.execCommand("copy");
+        alert("Done! Password has been copied!");
+    }
